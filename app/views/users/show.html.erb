@@ -11,8 +11,10 @@
 </p>
 
 <p>
-  <strong>First_micropost:</strong>
-  <%= @user.microposts.first.content %>
+  <% if @user.microposts.first%>
+    <strong>First_micropost:</strong>
+    <%= @user.microposts.first.content %>
+  <% end %>
 </p>
 
 
